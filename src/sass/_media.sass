@@ -1,0 +1,118 @@
+@media (max-width: 1223px)
+    .header
+        height: 90px
+        padding: 20px 15px
+        &__logo
+            width: 45px
+            height: 45px
+            img
+                width: 45px
+                height: 45px
+        &__company
+            font-size: 22px
+        &__email, &__phone, &__addr
+            font-size: 15px
+        .button
+            width: 200px
+            height: 45px
+            font-size: 16px
+@media ( max-width: 1023px)
+    .header
+        &__contacts, &__address
+            display: none
+    .promo
+        h1
+            font-size: 64px
+@media (max-width: 991px)
+@media (max-width: 767px)
+    .header
+        height: 70px
+        padding: 15px 10px
+        &__logo
+            width: 40px
+            height: 40px
+            img
+                width: 40px
+                height: 40px
+        .button
+            display: none
+        .hamburger
+            display: block
+            position: absolute
+            right: 10px
+            top: 50%
+            transform: translateY(-50%)
+            width: 45px
+            height: 26px
+            span
+                display: block
+                height: 2px
+                width: 100%
+                background-color: #2F3A3C
+                margin-bottom: 10px
+                transition: 0.5s all
+            &_active
+                span
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+    .promo
+        h1
+            padding-top: 160px
+            padding-left: 18px
+            font-size: 44px
+        .button_yellow
+            margin-left: 18px
+            margin-top: 30px
+        .block-white
+            width: 620px
+            height: 427px
+            margin-left: -227px
+            margin-top: -284px
+@media (max-width: 424px)
+    .header
+
+        &__company
+            display: none
+    .promo
+        height: 563px
+        padding: 47px 19px 7px 0
+        background: url(../img/main_bg_media.jpg) left no-repeat
+        h1
+            font-size: 32px
+        .button_yellow
+            width: 223px
+        .points
+            &_pink
+                transform: rotate(-90deg)
+                width: 45px
+                margin-left: 42px
+                margin-top: -384px
+            &_white
+                width: 124px
+                margin-top: 307px
+                margin-left: 235px
+        .point-row
+            width: 45px
+            margin-top: 13px
+            &-w202px
+                width: 124px
+            .point
+                width: 6px
+                height: 6px
+        .block-white
+            width: 362px
+            height: 324px
+            margin-top: -244px
+            margin-left: 0px
+@media (max-width: 374px)
+    .promo
+        .block-white
+            width: 305px
+        .points_white
+            margin-left: 180px
+        

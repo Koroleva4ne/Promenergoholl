@@ -1,0 +1,58 @@
+.header
+    position: fixed
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 110px
+    padding: 30px 30px 28px 30px
+    background: #FFFFFF
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+    z-index: 1
+    &__logotype
+        display: flex
+        align-items: center
+    &__logo
+        width: 50px
+        height: 50px
+    &__company
+        margin-left: 15px
+        font-size: 29px
+        line-height: 130%
+        color: $font-color
+    &__contacts
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__email
+        padding-left: 8px
+        color: $font-color
+        font-size: 18px
+        line-height: 134%
+        text-decoration: none
+        &:hover
+            color: $font-color
+            text-decoration: underline
+    &__phone
+        padding-left: 8px
+        padding-top: 8px
+        color: $font-color
+        font-size: 18px
+        line-height: 134%
+        text-decoration: none
+        &:hover
+            color: $font-color
+            text-decoration: underline
+    &__address
+        display: flex
+        justify-content: center
+    &__addr
+        margin-bottom: 0
+        padding-left: 21px
+        color: $font-color
+        font-size: 18px
+        line-height: 130%
+        text-decoration: none
+    .hamburger
+        display: none
