@@ -6,7 +6,45 @@ $(document).ready(function() {
         infinite: false,
         speed: 300,
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_prev_media.png" class="prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_next_media.png" class="next"></button>'
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    prevArrow: false,
+                    nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_next_media.png" class="next"></button>'
+                    }
+                },
+            {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                prevArrow: false,
+                nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_next_media.png" class="next"></button>'
+                }
+            },
+            {
+            breakpoint: 376,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                prevArrow: false,
+                nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_next_media.png" class="next"></button>'
+                }
+            }
+        ]
     });
 
     function valideForms(form){

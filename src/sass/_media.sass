@@ -1,41 +1,234 @@
-@media (max-width: 1223px)
+@media (max-width: 1199px)
     .header
-        height: 90px
-        padding: 20px 15px
-        &__logo
-            width: 45px
-            height: 45px
-            img
-                width: 45px
-                height: 45px
         &__company
-            font-size: 22px
-        &__email, &__phone, &__addr
-            font-size: 15px
-        .button
-            width: 200px
-            height: 45px
-            font-size: 16px
-@media ( max-width: 1023px)
+            display: none
+    .services
+        padding-left: 30px
+        .carousel
+            &__inner
+                width: 600px
+            .slick-prev
+                left: 330px
+                .prev
+                    margin-left: 0
+            .slick-next
+                .next
+                    margin-left: 0
+    .company
+        &__wrapper
+            flex-direction: column-reverse
+            img
+                margin-left: 269px
+                padding-left: 0
+                margin-top: 60px
+        &__bg
+            width: 445px
+            height: 456px
+        &__text
+            margin-top: 0
+        &__descr
+            width: 640px
+        &__block
+            margin-left: 0
+    .communication
+        padding: 80px 30px
+        .form
+            width: 460px
+        .button_submit
+            width: 460px
+        &__block
+            padding-left: 52px
+        &__points-blue, &__points-pink
+            display: none
+@media (max-width: 991px)
     .header
+        padding: 20px
         &__contacts, &__address
             display: none
     .promo
+        .block-white
+            width: 584px
         h1
+            padding-left: 76px
             font-size: 64px
-@media (max-width: 991px)
+        .button_yellow
+            margin-left: 180px
+    .services
+        padding-left: 0
+        &__blocks
+            flex-direction: column
+            align-items: center
+        .button_yellow-services
+            display: none
+        .button_yellow-media
+            display: block
+            margin: 0 auto
+            margin-top: 60px
+        .carousel
+            margin-top: 60px
+            &__inner
+                width: 658px
+            .slick-prev
+                top: 122px
+                left: auto
+                right: -24px
+            .slick-next
+                top: 52px
+                right: -24px
+    .communication
+        padding: 80px 15px
+        .form
+            width: 400px
+        .button_submit
+            width: 400px
+        &__block
+            padding-left: 22px
+    .footer
+        height: 60px
+        padding: 20px
+        &__wrapper
+            align-items: baseline
 @media (max-width: 767px)
     .header
+        height: 90px
+        padding: 15px
+        .button
+            width: 223px
+    .promo
+        height: 633px
+        background: url(../img/main_bg_media.jpg) center no-repeat
+        padding: 90px 0 160px 0
+        background-position: bottom right
+        .block-white
+            width: 450px
+            height: 383px
+            padding-top: 60px
+            padding-bottom: 60px
+            h1
+                padding-left: 24px
+                font-size: 46px
+        &__points-pink
+            display: none
+            &-media
+                padding-left: 0
+                display: block
+                transform: rotate(-90deg)
+        .button
+            &_yellow
+                width: 223px
+                font-size: 16px
+                margin-left: 137px
+                margin-top: 30px
+        &__points-white
+            display: none
+            &-media
+                display: block
+                margin-top: 66px
+                margin-right: 15px
+    .services
+        padding: 80px 0px
+        h2
+            font-size: 46px
+        &__price
+            margin-top: 40px
+            font-size: 27px
+        &__descr
+            margin-top: 20px
+        .button_yellow-media
+            margin-top: 40px
+        .carousel
+            margin-top: 40px
+            &__inner
+                width: 435px
+                .slick-slide
+                    img
+                        width: 132px
+                        height: 150px
+            .slick-prev
+                top: 50px
+                left: -62px
+            .slick-next
+                top: 50px
+                right: -62px
+    .company
+        &__wrapper
+            padding: 0 15px
+            img
+                margin-left: 135px
+                padding-left: 0
+                margin-top: 22px
+        &__text
+            margin-left: 0
+            h2
+                font-size: 46px
+        &__descr
+            width: 546px
+            margin-top: 30px
+        &__bg
+            width: 224px
+            height: 219px
+        &__block
+            margin-top: -175px
+            width: 300px
+            height: 225px
+        &__points-pink
+            display: none
+        &__points-pink-media
+            display: block
+            padding-left: 74px
+            padding-top: 40px
+    .communication
+        h2
+            font-size: 46px
+        &__wrapper
+            flex-direction: column
+        .title
+            margin-top: 30px
+            font-size: 24px
+        &__block
+            padding-left: 0
+        .form
+            margin-top: 20px
+            width: 440px
+            input
+                margin-top: 15px
+                &:nth-child(1)
+                    margin-top: 0px
+        .button_submit
+            margin-top: 15px
+            width: 440px
+        &__contact
+            margin-top: 15px
+    .footer
+        height: 124px
+        padding: 20px 15px
+        &__wrapper
+            flex-direction: column-reverse
+        &__block
+            flex-wrap: wrap
+        &__atelier
+            padding-top: 24px
+            font-size: 16px
+        &__item
+            font-size: 16px
+        &__items
+            padding: 0px 2px
+    .pageup
+        right: 20px
+        bottom: 40px
+        top: auto
+
+@media (max-width: 575px)
+    .header
         height: 70px
-        padding: 15px 10px
+        .button
+            display: none
         &__logo
             width: 40px
             height: 40px
             img
                 width: 40px
                 height: 40px
-        .button
-            display: none
         .hamburger
             display: block
             position: absolute
@@ -61,58 +254,54 @@
                     &:nth-child(3)
                         transform: translateY(3px) rotate(45deg)
     .promo
-        h1
-            padding-top: 160px
-            padding-left: 18px
-            font-size: 44px
-        .button_yellow
-            margin-left: 18px
-            margin-top: 30px
-        .block-white
-            width: 620px
-            height: 427px
-            margin-left: -227px
-            margin-top: -284px
-@media (max-width: 424px)
-    .header
-
-        &__company
-            display: none
-    .promo
-        height: 563px
-        padding: 47px 19px 7px 0
-        background: url(../img/main_bg_media.jpg) left no-repeat
-        h1
-            font-size: 32px
-        .button_yellow
-            width: 223px
-        .points
-            &_pink
-                transform: rotate(-90deg)
-                width: 45px
-                margin-left: 42px
-                margin-top: -384px
-            &_white
-                width: 124px
-                margin-top: 307px
-                margin-left: 235px
-        .point-row
-            width: 45px
-            margin-top: 13px
-            &-w202px
-                width: 124px
-            .point
-                width: 6px
-                height: 6px
+        padding: 150px 0 160px 0
         .block-white
             width: 362px
             height: 324px
-            margin-top: -244px
-            margin-left: 0px
-@media (max-width: 374px)
-    .promo
-        .block-white
-            width: 305px
-        .points_white
-            margin-left: 180px
-        
+            padding-top: 0
+            padding-bottom: 80px
+            h1
+                padding-left: 18px
+                font-size: 32px
+        &__head
+            flex-direction: column
+            align-items: start
+            justify-content: center
+        &__points-pink
+            &-media
+                padding-bottom: 66px
+                margin-top: -32px
+                padding-left: 18px
+                transform: none
+        .button
+            &_yellow
+                margin-left: 18px
+    .services
+        padding: 80px 15px
+        h2
+            font-size: 32px
+        &__descr
+            font-size: 16px
+        .carousel
+            margin-top: 40px
+            &__inner
+                width: 315px
+            .slick-next
+                right: -30px
+    .company
+        &__text
+            h2
+                font-size: 32px
+        &__descr
+            width: 346px
+            margin-top: 10px
+            font-size: 16px
+    .communication
+        h2
+            font-size: 32px
+        .form
+            width: 343px
+        .button_submit
+            width: 343px
+        &__email, &__phone, &__addr
+            font-size: 16px
