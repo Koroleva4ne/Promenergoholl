@@ -27,6 +27,41 @@ const swiper = new Swiper('.carousel', {
 
 window.addEventListener('DOMContentLoaded', () => {
 
+    // Menu
+
+    const hamburger = document.querySelectorAll('.hamburger'),
+          menu = document.querySelector('.menu'),
+          menuParent = document.querySelector('.menu__block'),
+          menuItem = document.querySelectorAll('.menu-item');
+
+    function openMenu() {
+        hamburger.forEach(i => {
+            i.classList.toggle('active');
+        });
+        
+        menu.classList.toggle('active');
+    }
+
+    hamburger.forEach(item => {
+        item.addEventListener('click', () => {
+            openMenu();
+        });
+    });
+
+    menuParent.addEventListener('click', (event) => {
+        const t = event.target;
+
+        if(t && t.classList.contains('menu-item')) {
+            menuItem.forEach(item => {
+                if(t == item) {
+                    openMenu();
+                }
+            });
+        }
+    });
+
+    console.log(menuItem);
+
         // function valideForms(form){
     //     $(form).validate({
     //         rules: {
