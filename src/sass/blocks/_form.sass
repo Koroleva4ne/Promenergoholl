@@ -3,6 +3,11 @@
     display: flex
     flex-direction: column
     width: 540px
+    @media screen and ( max-width: 575px )
+        margin-top: 42px
+        width: 343px
+    @media screen and ( max-width: 320px )
+        width: 300px
     input
         margin-top: 30px
         height: 50px
@@ -14,3 +19,11 @@
         color: $font-color
         &:nth-child(1)
             margin-top: 0px
+        @media screen and ( max-width: 575px )
+            margin-top: 15px
+    .button_submit
+        @media screen and ( max-width: 575px )
+            width: 343px
+            margin-top: 15px
+        @media screen and ( max-width: 320px )
+            width: 300px

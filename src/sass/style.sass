@@ -1,10 +1,10 @@
-@import "libs/_bootstrap-grid.min"
 @import "libs/_bootstrap-reboot.min"
+@import "libs/_bootstrap-grid.min"
 @import "libs/_fonts"
-@import "libs/_slick"
 @import "_variables"
 @import "blocks/_promo"
 @import "blocks/_header"
+@import "blocks/_menu"
 @import "blocks/_button"
 @import "blocks/_services"
 @import "blocks/_company"
@@ -12,13 +12,18 @@
 @import "blocks/_title"
 @import "blocks/_form"
 @import "blocks/_footer"
-@import "blocks/_pageup"
-@import "_media"
 
 
 *
     font-family: 'Gilroy Bold', sans-serif
 
-.container
-    max-width: 1275px
-    margin-right: 0
+
+    .container
+        @media(min-width: 1440px)
+            max-width: 1275px
+            margin-right: 0
+
+        @media screen and ( max-width: 575px )
+            max-width: 345px
+        @media screen and ( max-width: 320px )
+            max-width: 300px

@@ -8,23 +8,34 @@
     padding: 30px 30px 28px 30px
     background: #FFFFFF
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
-    z-index: 1
+    z-index: 3
+    @media screen and ( max-width: 767px )
+        height: 70px
+        padding: 15px
     &__logotype
         display: flex
         align-items: center
     &__logo
-        width: 50px
-        height: 50px
+        img
+            width: 50px
+            height: 50px
+            @media screen and ( max-width: 767px )
+                width: 40px
+                height: 40px
     &__company
         margin-left: 15px
         font-size: 29px
         line-height: 130%
         color: $font-color
+        @media screen and ( max-width: 767px )
+            display: none
     &__contacts
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
+        @media screen and ( max-width: 1279px )
+            display: none
     &__email
         padding-left: 8px
         color: $font-color
@@ -47,6 +58,11 @@
     &__address
         display: flex
         justify-content: center
+        @media screen and ( max-width: 1279px )
+            display: none
+    .button
+        @media screen and ( max-width: 767px )
+            display: none
     &__addr
         margin-bottom: 0
         padding-left: 21px
@@ -56,3 +72,27 @@
         text-decoration: none
     .hamburger
         display: none
+        @media screen and ( max-width: 767px )
+            display: block
+            position: absolute
+            right: 15px
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            width: 45px
+            height: 45px
+            span
+                display: block
+                height: 2px
+                width: 100%
+                background-color: #2F3A3C
+                transition: 0.1s all
+            &_active
+                span
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: translateY(11px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(-11px) rotate(45deg)

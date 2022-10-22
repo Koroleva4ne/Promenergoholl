@@ -1,14 +1,34 @@
 .communication
     padding: 0px 0px 30px 0
+    @media screen and ( max-width: 991px )
+        padding: 80px 0 100px 0
     h2
         font-size: 51px
         line-height: 130%
         color: $font-color
+        @media screen and ( max-width: 991px )
+            text-align: center
+        @media screen and ( max-width: 767px )
+            font-size: 48px
+        @media screen and ( max-width: 575px )
+            font-size: 32px
+        @media screen and ( max-width: 320px )
+            font-size: 28px
     &__wrapper
         display: flex
         flex-direction: row
+        @media screen and ( max-width: 991px )
+            align-items: center
+            flex-direction: column
+    &__form
+        @media screen and ( max-width: 575px )
+            width: 100%
     &__block
         padding-left: 124px
+        @media screen and ( max-width: 1199px )
+            padding-left: 62px
+        @media screen and ( max-width: 991px )
+            padding: 0
     &__contact
         display: flex
         flex-direction: row
@@ -16,7 +36,11 @@
         margin-top: 30px
         &:nth-child(1)
             margin-top: 24px
-    &__email
+        @media screen and ( max-width: 575px )
+            margin-top: 15px
+            &:nth-child(1)
+                margin-top: 12px
+    &__email, &__phone, &__addr
         padding-left: 15px
         color: $font-color
         font-size: 18px
@@ -25,29 +49,22 @@
         &:hover
             color: $font-color
             text-decoration: underline
-    &__phone
-        padding-left: 15px
-        color: $font-color
-        font-size: 18px
-        line-height: 134%
-        text-decoration: none
-        &:hover
-            color: $font-color
-            text-decoration: underline
+        @media screen and ( max-width: 575px )
+            font-size: 16px
     &__addr
         margin-bottom: 0px
         padding-left: 20px
-        color: $font-color
-        font-size: 18px
-        line-height: 130%
-        text-decoration: none
     &__points-blue
         display: block
         margin-left: auto
         margin-right: 30px
         margin-bottom: -53px
+        @media screen and ( max-width: 991px )
+            display: none
     &__points-pink
         display: block
         transform: rotate(90deg)
         margin-left: auto
         margin-right: 168px
+        @media screen and ( max-width: 991px )
+            display: none

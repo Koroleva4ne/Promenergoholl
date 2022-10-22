@@ -1,30 +1,115 @@
 .promo
     position: relative
     height: 789px
-    background: url(../img/main_bg.jpg) right no-repeat
-    z-index: 0
     padding-top: 110px
+    @media screen and ( max-width: 767px )
+        padding-top: 150px
+    @media screen and ( max-width: 575px )
+        height: 633px
+    &__bg
+        position: absolute
+        z-index: 1
+        width: 1275px
+        height: 789px
+        background: url(../img/main_bg.jpg) no-repeat
+        background-size: cover
+        right: 0
+        top: 0
+        &::after
+            content: ''
+            display: block
+            height: 789px
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.51) 24.48%, rgba(255, 255, 255, 0) 100%), linear-gradient(106.71deg, rgba(215, 107, 255, 0.6) 0%, rgba(1, 141, 202, 0.6) 100%)
+        @media screen and ( max-width: 575px )
+            background:  url(../img/main_bg_media.jpg) no-repeat
+            width: 375px
+            height: 633px
+            background-position: bottom
+            &::after
+                height: 633px
     .block-white
+        position: absolute
+        z-index: 2
+        padding: 111px 0 89px 0
         width: 800px
         height: 530px
         background: #FFFFFF
-        padding-top: 111px
-        padding-bottom: 89px
+        @media screen and ( max-width: 1080px )
+            padding: 97px 0 75px 0
+            width: 745px
+            height: 480px
+        @media screen and ( max-width: 767px )
+            width: 546px
+            height: 403px
+        @media screen and ( max-width: 575px )
+            width: 362px
+            height: 324px
+            padding: 0
+        @media screen and ( max-width: 320px )
+            width: 305px
     &__head
         display: flex
         flex-direction: row
         align-items: center
+        @media screen and ( max-width: 767px )
+            flex-direction: column
+            align-items: start
     &__points-pink
         padding-left: 30px
+        @media screen and ( max-width: 767px )
+            transform: rotate(-90deg)
+            position: absolute
+            padding: 0
+            left: 80px
+            top: -100px
+        @media screen and ( max-width: 575px )
+            display: none
         &-media
             display: none
+            @media screen and ( max-width: 575px )
+                transform: none
+                display: block
+                padding: 0
+                position: absolute
+                top: -32px
+                left: 18px
     h1
-        padding-left: 156px
+        margin-left: 156px
         font-size: 85px
         line-height: 130%
+        @media screen and ( max-width: 1080px )
+            font-size: 76px
+        @media screen and ( max-width: 920px )
+            margin-left: 120px
+        @media screen and ( max-width: 884px )
+            font-size: 60px
+        @media screen and ( max-width: 767px )
+            font-size: 46px
+            margin-left: 30px
+        @media screen and ( max-width: 575px )
+            font-size: 32px
+            margin: 80px 0 0 18px
+    .button_yellow
+        @media screen and ( max-width: 920px )
+            margin-left: 224px
+        @media screen and ( max-width: 767px )
+            margin-left: 30px
+        @media screen and ( max-width: 575px )
+            margin: 30px 0 0 18px
+            width: 223px
+            font-size: 16px
     &__points-white
+        position: absolute
+        z-index: 2
         display: block
-        margin-right: 30px
-        margin-left: auto
+        bottom: -53px
+        right: 30px
+        @media screen and ( max-width: 575px )
+            display: none
         &-media
             display: none
+            @media screen and ( max-width: 575px )
+                display: block
+                position: absolute
+                right: 15px
+                bottom: -32px
