@@ -60,8 +60,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    console.log(menuItem);
-
         // function valideForms(form){
     //     $(form).validate({
     //         rules: {
