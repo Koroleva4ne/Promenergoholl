@@ -1,0 +1,107 @@
+.promo
+    @media screen and ( max-width: 1440px )
+        .container
+            max-width: 100%
+
+    @media screen and ( max-width: 1080px )
+        .block-white
+            padding: 97px 0 75px 0
+            width: calc( 100% - 30px )
+            height: 480px
+        h1
+            font-size: 76px
+
+    @media screen and ( max-width: 920px )
+        h1
+            margin-left: 120px
+        .button_yellow
+            margin-left: 224px
+
+    @media screen and ( max-width: 884px )
+        h1
+            font-size: 60px
+        
+    @media screen and ( max-width: 767px )
+        padding-top: 150px
+        &__bg
+            top: -150px
+        .block-white
+            width: calc( 100% - 90px )
+            height: 403px
+        &__head
+            display: block
+        &__points-pink
+            transform: rotate(-90deg)
+            position: absolute
+            padding: 0
+            left: 80px
+            top: -100px
+        h1
+            font-size: 46px
+            margin-left: 30px
+        .button_yellow
+            margin-left: 30px
+
+
+    @media screen and ( max-width: 575px )
+        height: 633px
+        &__bg
+            width: 100%
+            height: 633px
+            background-position-x: 80%
+            &::after
+                height: 633px
+        .block-white
+            left: 0
+            height: 324px
+            padding: 80px 0 80px 0
+        &__points-pink
+            display: none
+            &-media
+                transform: none
+                display: block
+                padding: 0
+                z-index: 3
+                position: absolute
+                top: 118px
+                left: 15px
+        h1
+            font-size: 32px
+            margin-left: 15px
+        .button_yellow
+            margin: 30px 0 0 15px
+            width: 223px
+            font-size: 16px
+        &__points-white
+            display: none
+            &-media
+                    display: block
+                    position: absolute
+                    right: 15px
+                    bottom: -32px
+
+    @media screen and ( max-width: 425px )
+        .block-white
+            width: calc( 100% - 15px )
+        h1
+            margin-left: 15px
+        .button_yellow
+            margin: 30px 0 0 15px
+
+    @media screen and ( max-width: 375px )
+        &__bg
+            background:  url(../img/main_bg_media.jpg) no-repeat
+            width: 375px
+            background-position: bottom
+            width: 100%
+
+    @media screen and ( max-width: 280px )
+        h1
+            font-size: 28px
+
+    @media screen and ( max-width: 240px )
+        h1
+            font-size: 24px
+        .button_yellow
+            width: 195px
+                    

@@ -1,0 +1,59 @@
+.promo
+    position: relative
+    height: 789px
+    padding-top: 110px
+
+    .container
+        position: relative
+        height: 100%
+
+    &__bg
+        position: absolute
+        width: 1275px
+        height: 789px
+        background: url(../img/main_bg.jpg) no-repeat
+        background-size: cover
+        right: 0
+        top: -110px
+        &::after
+            content: ''
+            display: block
+            height: 789px
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.51) 24.48%, rgba(255, 255, 255, 0) 100%), linear-gradient(106.71deg, rgba(215, 107, 255, 0.6) 0%, rgba(1, 141, 202, 0.6) 100%)
+
+    .block-white
+        position: absolute
+        z-index: 2
+        padding: 111px 0 89px 0
+        width: 800px
+        height: 530px
+        background: #FFFFFF
+        
+    &__head
+        display: flex
+        flex-direction: row
+        align-items: center
+
+    &__points-pink
+        padding-left: 30px
+        &-media
+            display: none
+            
+    h1
+        margin-left: 156px
+        font-size: 85px
+        line-height: 130%
+        
+    &__points-white
+        position: absolute
+        z-index: 2
+        display: block
+        bottom: -53px
+        right: 30px
+        &-media
+            display: none
+            @media screen and ( max-width: 575px )
+                display: block
+                position: absolute
+                right: 15px
+                bottom: -32px
