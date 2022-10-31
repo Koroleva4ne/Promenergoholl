@@ -77,42 +77,72 @@
         </div>
     </section>
 
-    <!-- <section class="services">
+    <section class="services">
         <div class="container">
-            <div class="services__title">Что мы предлагаем?</div>
-            <div class="services__wrapper">
-                <div class="services__price">От 600 руб./м^2</div>
-                <div class="services__descr">Наша компания предоставляет услугу мытья<br>полов от бетонной крошки.</div>
-                <button class="button button_yellow button_yellow-services" onclick="window.location.href = '#communication'">Заказать услугу</button>
-            </div>
-            <div class="carousel swiper">
-                <div class="carousel__arrows">
-                    <button type="button" class="button-prev">
-                        <img src="icons/arrow_prev.png" class="prev" alt="prev">
-                    </button>
-                    <button type="button" class="button-next">
-                        <img src="icons/arrow_next.png" class="next" alt="next">
-                    </button>
+            <div class="container__wrapper">
+                <div class="services__title">Что мы <br> предлагаем?</div>
+                <div class="services__wrapper">
+                    <div class="services__price">От 600 руб./м^2</div>
+                    <div class="services__descr">Наша компания предоставляет услугу мытья<br>полов от бетонной крошки.</div>
+                    <button class="button button_yellow button_yellow-services" onclick="window.location.href = '#communication'">Заказать услугу</button>
                 </div>
-                <div class="carousel__inner swiper-wrapper">
-                    <div class="carousel__slide swiper-slide"><img src="img/services/slide_1.jpg" alt="slide"></div>
-                    <div class="carousel__slide swiper-slide"><img src="img/services/slide_2.jpg" alt="slide"></div>
-                    <div class="carousel__slide swiper-slide"><img src="img/services/slide_3.jpg" alt="slide"></div>
-                    <div class="carousel__slide swiper-slide"><img src="img/services/slide_4.jpg" alt="slide"></div>
-                    <div class="carousel__slide swiper-slide"><img src="img/services/slide_1.jpg" alt="slide"></div>
-                    <div class="carousel__slide swiper-slide"><img src="img/services/slide_2.jpg" alt="slide"></div>
-                    <div class="carousel__slide swiper-slide"><img src="img/services/slide_3.jpg" alt="slide"></div>
-                    <div class="carousel__slide swiper-slide"><img src="img/services/slide_4.jpg" alt="slide"></div>
+                <div class="carousel swiper">
+                    <div class="carousel__arrows">
+                        <button type="button" class="button-prev">
+                            <img src="icons/arrow_prev.png" class="prev" alt="prev">
+                        </button>
+                        <button type="button" class="button-next">
+                            <img src="icons/arrow_next.png" class="next" alt="next">
+                        </button>
+                    </div>
+                    <div class="carousel__inner swiper-wrapper">
+                        <div class="carousel__slide swiper-slide">
+                            <picture>
+                                <source media="(max-width: 425px)" srcset="img/services/slide_1_132w.jpg">
+                                <source media="(min-width: 426px)" srcset="img/services/slide_1_160w.jpg">
+                                <img src="img/services/slide_1_160w.jpg" alt="slide">
+                            </picture>
+                        </div>
+                        <div class="carousel__slide swiper-slide">
+                            <picture>
+                                <source media="(max-width: 425px)" srcset="img/services/slide_2_132w.jpg">
+                                <source media="(min-width: 426px)" srcset="img/services/slide_2_160w.jpg">
+                                <img src="img/services/slide_2_160w.jpg" alt="slide">
+                            </picture>
+                        </div>
+                        <div class="carousel__slide swiper-slide">
+                            <picture>
+                                <source media="(max-width: 425px)" srcset="img/services/slide_1_132w.jpg">
+                                <source media="(min-width: 426px)" srcset="img/services/slide_3_160w.jpg">
+                                <img src="img/services/slide_3_160w.jpg" alt="slide">
+                            </picture>
+                        </div>
+                        <div class="carousel__slide swiper-slide">
+                            <picture>
+                                <source media="(max-width: 425px)" srcset="img/services/slide_2_132w.jpg">
+                                <source media="(min-width: 426px)" srcset="img/services/slide_4_160w.jpg">
+                                <img src="img/services/slide_4_160w.jpg" alt="slide">
+                            </picture>
+                        </div>
+                        <div class="carousel__slide swiper-slide">
+                            <picture>
+                                <source media="(max-width: 425px)" srcset="img/services/slide_1_132w.jpg">
+                                <source media="(min-width: 426px)" srcset="img/services/slide_5_160w.jpg">
+                                <img src="img/services/slide_5_160w.jpg" alt="slide">
+                            </picture>
+                        </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="button-next-media">
+                    <img src="icons/arrow_next_media.png" alt="next">
+                </button>
+                <button class="button button_yellow button_yellow-media" onclick="window.location.href = '#communication'">Связаться с нами</button>
             </div>
-            <button class="button-next-media">
-                <img src="icons/arrow_next_media.png" alt="next">
-            </button>
-            <button class="button button_yellow button_yellow-media" onclick="window.location.href = '#communication'">Связаться с нами</button>
         </div>
     </section>
 
-    <section class="company"> 
+    <!-- <section class="company"> 
         <div class="container">
             <div class="company__bg">
                 <img src="img/second_bg.jpg" alt="second_bg" class="company__bg-img">

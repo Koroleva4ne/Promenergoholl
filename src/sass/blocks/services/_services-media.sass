@@ -1,0 +1,76 @@
+.services
+    @media screen and ( max-width: 1280px )
+        padding: 110px 0
+
+    @media screen and ( max-width: 1274px )
+        .carousel
+            width: 700px
+
+    @media screen and ( max-width: 1199px )
+        .carousel
+            width: 600px
+        
+    @media screen and ( max-width: 1074px )
+        padding: 80px 0
+        .container__wrapper
+            display: block
+        &__title
+            position: static
+            font-size: 32px
+        &__wrapper
+            margin-top: 40px
+        &__price
+            font-size: 24px
+            margin-top: 0
+        &__descr
+            font-size: 16px
+            margin-top: 20px
+        .carousel
+            width: calc( 100% - 65px )
+            &__arrows
+                display: none
+            &__inner
+                padding-top: 40px
+        .button_yellow
+            &-services
+                display: none
+            &-media
+                display: block
+                margin: 40px 0 0 0
+                width: 223px
+                font-size: 16px
+        .button-next-media
+            position: absolute
+            z-index: 2
+            display: block
+            border: none
+            background: #FFD76B
+            width: 50px
+            height: 50px
+            border-radius: 100px
+            right: 0
+            transform: translateY(-138px)
+
+    @media screen and ( max-width: 425px )
+        .carousel
+            &__slide img
+                width: 130px
+                height: 150px
+        .button-next-media
+            transform: translateY(-100px)
+
+    
+    @media screen and ( max-width: 374px )
+        &__title
+            display: inline-block
+            br
+                display: block
+        .carousel
+            width: calc( 100% - 50px )
+            &__slide img
+                display: block
+                margin: 0 auto
+
+    @media screen and ( max-width: 253px )
+        .button_yellow-media
+            width: 100%

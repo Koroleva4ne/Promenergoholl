@@ -8,7 +8,8 @@
 @import "blocks/promo/_promo-media"
 @import "blocks/_menu"
 @import "blocks/_button"
-@import "blocks/_services"
+@import "blocks/services/_services"
+@import "blocks/services/_services-media"
 @import "blocks/_company"
 @import "blocks/_communication"
 @import "blocks/_title"
@@ -21,11 +22,21 @@
 
 
     .container
-        @media(min-width: 1440px)
-            max-width: 1440px
+        max-width: 1440px
+        margin: 0 auto
+        &__wrapper
+            max-width: 1275px
+            margin-right: 0
+        
+        @media screen and ( max-width: 1305px )
+            max-width: calc( 100% - 30px )
+            margin-right: 0
+            &__wrapper
+                max-width: 100%
+    
+        @media screen and ( max-width: 1074px )
+            max-width: calc( 100% - 60px )
             margin: 0 auto
 
-        @media screen and ( max-width: 575px )
-            max-width: 345px
-        @media screen and ( max-width: 320px )
-            max-width: 300px
+        @media screen and ( max-width: 576px )
+            max-width: calc( 100% - 30px )

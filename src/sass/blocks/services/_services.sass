@@ -1,0 +1,69 @@
+.services
+    padding: 150px 0
+    .container
+        position: relative
+        &__wrapper
+            display: flex
+            justify-content: space-between
+            align-items: end
+            margin: 0 0 0 auto
+        
+    &__title
+        position: absolute
+        top: 0
+        font-size: 51px
+        line-height: 130%
+        color: $font-color
+        br
+            display: none
+  
+    &__wrapper
+        margin-top: 126px
+
+    &__price
+        font-size: 29px
+        line-height: 130%
+        color: $font-color
+            
+    &__descr
+        margin-top: 30px
+        font-size: 18px
+        line-height: 130%
+        color: $font-color
+
+    .carousel
+        width: 800px
+        margin: 0px
+        &__arrows
+            display: flex
+            justify-content: end
+            margin-right: 165px
+            .button-prev, .button-next
+                padding: 0
+                border: none
+                background: #FFD76B
+                width: 50px
+                height: 50px
+                border-radius: 100px
+                box-shadow: 0px 6px 10px rgba(255, 215, 107, 0.5)
+                transition: 0.5s all
+                &:hover
+                    background: #F2D0FF
+                    box-shadow: 0px 6px 10px rgba(215, 107, 255, 0.2)
+                .prev
+                    margin-left: 13px
+                .next
+                    margin-left: -36px
+            .button-prev
+                margin-right: 80px
+        &__inner
+            padding-top: 68px
+        &__slide
+            width: 130px
+            margin-right: 15px 
+            img
+                width: 160px
+                height: 226px 
+
+    .button-next-media
+        display: none 

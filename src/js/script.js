@@ -4,23 +4,66 @@ const swiper = new Swiper('.carousel', {
     spaceBetween: 30,
     slidesPerView: 4.4,
     direction: 'horizontal',
-    resistance: false,
-    resistance: true,
     navigation: {
         nextEl: '.button-next',
         prevEl: '.button-prev',
     },
     breakpoints: {
-        320: {
+        0: {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.button-next-media'
+            }
+        },
+        375: {
             slidesPerView: 2,
             spaceBetween: 15,
             navigation: {
                 nextEl: '.button-next-media'
             }
         },
-        1440: {
+        525: {
+            slidesPerView: 2.4,
+            spaceBetween: 15,
+            navigation: {
+                nextEl: '.button-next-media'
+            }
+        },
+        630: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+            navigation: {
+                nextEl: '.button-next-media'
+            }
+        },
+        755: {
+            slidesPerView: 3.4,
             spaceBetween: 30,
-            slidesPerView: 4.4
+            navigation: {
+                nextEl: '.button-next-media'
+            }
+        },
+        845: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.button-next-media'
+            }
+        },
+        1075: {
+            slidesPerView: 3.4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.button-next-media'
+            }
+        },
+        1275: {
+            slidesPerView: 4.4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            }
         }
     }
 });
