@@ -1,0 +1,44 @@
+.company
+    position: relative
+    .container__wrapper
+        display: flex
+        margin: 0 0 0 auto
+    &__bg
+        display: flex
+        justify-content: end
+        align-items: end
+        &-img
+            z-index: 3
+            &-media
+                display: none
+    &__gr
+        position: absolute
+        top: 60px
+        z-index: 1
+        &-media
+            display: none
+                
+    &__points-pink
+        margin-right: 21px
+        margin-bottom: 60px
+        z-index: 2
+        &-media
+            display: none
+
+    &__text
+        z-index: 4
+        margin-top: 60px
+        margin-left: 60px
+        width: 509px
+        display: flex
+        flex-direction: column
+        h2
+            font-size: 51px
+            line-height: 130%
+            color: $font-color
+
+    &__descr
+        margin-top: 60px
+        font-size: 18px
+        line-height: 130%
+        color: $font-color
