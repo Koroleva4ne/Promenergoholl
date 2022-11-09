@@ -2,20 +2,10 @@
     height: 82px
     padding: 30px
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.66)), linear-gradient(106.71deg, rgba(215, 107, 255, 0.6) 0%, rgba(1, 141, 202, 0.6) 100%)
-    @media screen and ( max-width: 991px )
-        height: 62px
-        padding: 20px 15px
-    @media screen and ( max-width: 767px )
-        height: 105px
-    @media screen and ( max-width: 375px )
-        height: 124px
     &__wrapper
         display: flex
         justify-content: space-between
         align-items: center
-        @media screen and ( max-width: 767px )
-            flex-direction: column-reverse
-            align-items: start
     &__atelier
         font-size: 18px
         line-height: 100%
@@ -24,28 +14,14 @@
         &:hover
             color: $font-color
             text-decoration: underline
-        @media screen and ( max-width: 767px )
-            margin-top: 24px
-        @media screen and ( max-width: 375px )
-            font-size: 16px
     &__block
         display: flex
         flex-direction: row
-        @media screen and ( max-width: 375px )
-            flex-wrap: wrap
     &__items
         border-right: 2px solid $font-color
         padding: 0px 5px
         &:nth-child(2)
             border-right: none
-        @media screen and ( max-width: 767px )
-            padding: 0 5px
-            &:first-child
-                padding: 0 5px 0 0px
-        @media screen and ( max-width: 375px )
-            padding: 0 5px 0 0px
-            &:nth-child(2)
-                padding: 0
     &__item
         font-size: 18px
         line-height: 100%
@@ -54,5 +30,3 @@
         &:hover
             color: $font-color
             text-decoration: underline
-        @media screen and ( max-width: 375px )
-            font-size: 16px

@@ -1,0 +1,37 @@
+.footer
+    @media screen and ( max-width: 991px )
+        height: 62px
+        padding: 20px 15px
+
+    @media screen and ( max-width: 767px )
+        height: 105px
+        &__wrapper
+            flex-direction: column-reverse
+            align-items: start
+        &__atelier
+            margin-top: 24px
+        &__items
+            padding: 0 5px
+            &:first-child
+                padding: 0 5px 0 0px
+
+    @media screen and ( max-width: 375px )
+        height: 124px
+        &__atelier
+            font-size: 16px
+            &__block
+                flex-wrap: wrap
+        &__items
+            padding: 0 5px 0 0px
+            &:nth-child(2)
+                padding: 0 0 0 5px
+        &__item
+            font-size: 16px
+    
+    @media screen and ( max-width: 319px )
+        &__atelier, &__item
+            font-size: 14px
+
+    @media screen and ( max-width: 279px )
+        &__atelier, &__item
+            font-size: 12px
